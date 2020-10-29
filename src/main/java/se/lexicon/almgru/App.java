@@ -1,7 +1,5 @@
 package se.lexicon.almgru;
 
-import java.util.Scanner;
-
 /**
  * Hello world!
  *
@@ -10,7 +8,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        printOutName("Daniel");
+        printOut("name", "Daniel");
+        printOut("age", "30");
     }
 
     // Syntax: <access modifier> <static/instance> <return type> <name> <parameters> <body>
@@ -21,8 +20,8 @@ public class App
         System.out.println("Hello World - From Method");
     }
 
-    public static void printOutName(String name) {
-        System.out.print("The name is: ");
+    public static void printOut(String what, String name) {
+        System.out.print("The " + what + " is: ");
         System.out.println(name);
     }
 }
