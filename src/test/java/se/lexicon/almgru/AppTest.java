@@ -1,6 +1,7 @@
 package se.lexicon.almgru;
 
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
@@ -16,5 +17,18 @@ public class AppTest
     public void shouldAnswerWithTrue()
     {
         assertTrue( true );
+    }
+
+    @Test
+    public void test_isAdult() {
+        // Arrange
+        int age = 18;
+        boolean expected = true;
+
+        // Act
+        boolean actual = App.isAdult(age);
+
+        // Assert
+        assertEquals(expected, actual);
     }
 }
