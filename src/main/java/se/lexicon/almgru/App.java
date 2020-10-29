@@ -35,4 +35,8 @@ public class App
 
         return result;
     }
+
+    public static boolean isAdult(int age) {
+        return age >= 18;
+    }
 }
